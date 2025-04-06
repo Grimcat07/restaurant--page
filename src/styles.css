@@ -104,7 +104,7 @@ button:hover
     font-size: large;
     
 }
-.dish,.desc,.more_info,.contact 
+.dish,.desc,.more_info,.contact ,.employee
     {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
         border: 2px solid #FF4B6E;
@@ -129,7 +129,7 @@ li::before
     content: "";
 }
 
-.dish
+.dish,.employee
 {
     display: grid;
     grid-template-columns: 120px 40ch;
@@ -140,9 +140,10 @@ li::before
         border-radius: 49%;
         object-fit: cover;
     }
+    padding: 12px;
     
 }
-.dish .para_heading
+.dish .para_heading,.employee .para_heading
 {
     grid-column: 1/-1;
     text-align: center;
@@ -154,4 +155,12 @@ li::before
     grid-row: 2/-1;
     align-self: center;
     
+}
+.employee .img_div
+{
+  img 
+  {
+    width: 100px;
+    height: 100px;
+  }
 }

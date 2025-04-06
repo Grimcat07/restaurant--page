@@ -1,9 +1,9 @@
 export {menu}
-import mango_salad from "./assests/Mango-Avocado-Salad.jpg"
-//import pasta from "./assests/Pasta.jpg"
-//import pizza from "./assests/Pizza.jpg"
-//import sushi from "./assests/Sushi.jpg"
-//import burger from "./assests/Burger.jpg"
+import mango_salad from "./assets/Mango-Avocado-Salad.jpg"
+import pasta from "./assets/pasta.jpg"
+import pizza from "./assets/pizza.jpg"
+import sushi from "./assets/sushi.jpg"
+import burger from "./assets/burger.jpg"
 
 function menu() {
     const container = document.querySelector("#content")
@@ -55,7 +55,7 @@ function menu() {
     d2_item3.className = "add_info"
     d2_item3.textContent = "🌿 Comfort food with a taste of Italy."
     const d2_img = document.createElement("img")
-   // d2_img.src = pasta
+    d2_img.src = pasta
     const img_div2 = document.createElement("div")
     img_div2.className = "img_div"
     img_div2.appendChild(d2_img)
@@ -84,7 +84,7 @@ function menu() {
     d3_item3.className = "add_info"
     d3_item3.textContent = "🌿 Simple, fresh, and flavorful!"
     const d3_img = document.createElement("img")
-    //d3_img.src = pizza
+    d3_img.src = pizza
     const img_div3 = document.createElement("div")
     img_div3.className = "img_div"
     img_div3.appendChild(d3_img)
@@ -113,7 +113,7 @@ function menu() {
     d4_item3.className = "add_info"
     d4_item3.textContent = "🌿 A delightful assortment for sushi lovers."
     const d4_img = document.createElement("img")
-   // d4_img.src = sushi
+    d4_img.src = sushi
     const img_div4 = document.createElement("div")
     img_div4.className = "img_div"
     img_div4.appendChild(d4_img)
@@ -142,7 +142,7 @@ function menu() {
     d5_item3.className = "add_info"
     d5_item3.textContent = "🌿 A classic American favorite."
     const d5_img = document.createElement("img")
-   // d5_img.src = burger
+    d5_img.src = burger
     const img_div5 = document.createElement("div")
     img_div5.className = "img_div"
     img_div5.appendChild(d5_img)
