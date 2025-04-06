@@ -1,0 +1,129 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/*
+    My Styles
+*/
+body
+{
+    background-color: #000000;
+}
+
+header
+{
+    background-color: #1A0033;
+    text-align: center;
+}
+.logo
+{
+    font-weight: 600;
+    color: #00FF87;
+    font-size: x-large;
+}
+.header
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    height: 100px;
+    align-items: center; 
+}
+.buttons
+{
+    display: flex;
+    gap: 20px;
+}
+.buttons button
+{
+    color: #F5F5F5;
+    background-color: #1A0033;
+    border: 2px solid brown;
+    border-radius: 10px;
+}
+button:hover
+{
+    transform: scale(1.05);
+    background-color: #FF4B6E;
+}
+
+#content
+{
+    color: #FF4B6E;
+    padding: 30px;
+    display: grid;
+    grid-template-rows: repeat(5,min-content);
+    gap: 30px;
+    width: 65ch;
+    justify-self: center;
+    font-size: large;
+    div 
+    {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+        border: 2px solid #FF4B6E;
+        border-radius: 12px;
+        padding: 20px;
+    }
+}
+.para_heading
+{
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+li
+{
+    list-style-type: none;
+}
+li::before
+{
+    content: "- ";
+}
+.contact>ul>li::before
+{
+    content: "";
+}
